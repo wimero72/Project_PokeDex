@@ -48,3 +48,10 @@ Project_PokeDex/
     ├── main.js # Lógica para index.html (Filtro, Renderizado, Detalle) 
     └── combat.js # Lógica para combat.html (Selección, Lógica de Combate)
 ```
+
+### 👤 Autor y Contacto
+
+**Wilmer Isaac Mendoza Rodriguez**
+* **Email:** wmendozar.uoc.fwd@gmail.com
+* **GitHub del Proyecto:** [https://github.com/wimero72/Project_PokeDex.git](https://github.com/wimero72/Project_CV.git)
+* **Formación:** Estudiante Front End WEB Developer - UOC
