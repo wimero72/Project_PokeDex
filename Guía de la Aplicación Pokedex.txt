@@ -1,0 +1,36 @@
+Guía de la Aplicación Pokedex
+He completado la aplicación Pokedex con las siguientes características:
+
+Características
+1. Página de Inicio (index.html)
+Pokemon Aleatorios: Obtiene y muestra 10 Pokemon aleatorios de la Generación 1.
+Filtro de Búsqueda: Filtra los Pokemon mostrados por nombre en tiempo real.
+Vista Detallada: Haz clic en "Ver Detalles" en cualquier tarjeta para ver una vista dedicada (actualiza la URL con ?pokeID=X).
+Diseño Responsivo: Las tarjetas se ajustan al tamaño de la pantalla.
+
+2. Página de Combate (combat.html)
+Cartas Misteriosas: Carga 10 cartas boca abajo.
+Batalla Interactiva:
+Selecciona la primera carta (Atacante).
+Selecciona la segunda carta (Defensor).
+Las cartas se voltean para revelar el Pokemon.
+El ganador se decide basado en las estadísticas de Ataque vs Defensa.
+Reiniciar: Botón para comenzar una nueva batalla con nuevos Pokemon.
+
+Cómo Verificar
+
+Abre index.html en el navegador.
+Comprueba que aparecen 10 tarjetas.
+Escribe en la barra de búsqueda para filtrar.
+Haz clic en una tarjeta para ver la vista detallada.
+Haz clic en "Volver a la Lista" para regresar.
+Navega a "Combate" a través de la barra de navegación.
+Comprueba que aparecen 10 tarjetas con una cara "?".
+Haz clic en dos cartas.
+Verifica que se voltean y aparece el mensaje de resultado en la parte superior.
+Haz clic en "Reiniciar Batalla" para jugar de nuevo.
+
+Detalles Técnicos
+Stack: Vanilla HTML, CSS, JS.
+API: PokeAPI.
+Estilo: Efecto Glassmorphism con Variables CSS y Flexbox/Grid.

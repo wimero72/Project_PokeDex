@@ -1,46 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex | Inicio</title>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+    <title>Pokedex - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1>Pokedex Simple</h1>
-             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="combat.html">Combate</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <div class="logo">Pokédex</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="combat.html">Combat</a></li>
+        </ul>
+    </nav>
 
-   
-        <input id="filter" type="text" placeholder="filtra...">
-        <section id="out" class="cards"></section>
+    <main class="container">
+        <section id="search-section">
+            <input type="text" id="pokemon-search" placeholder="Filter Pokemon by name...">
+        </section>
 
-        <template id="temp">
-            <article class="card">
-                <p class="title"></p>
-                <p class="ki">Ki: <span></span></p>
-                <img class="img" src="" alt="">
-            </article>
-        </template>
+        <section id="pokemon-list" class="pokemon-grid">
+            <!-- Las cartas Pokémon se inyectarán aquí -->
+        </section>
 
-        <template id="poketemp">
-            <article class="poke card">
-                <p class="title"></p>
-                <p class="habs"></p>
-                <img class="img" src="" alt="">
-            </article>
-        </template>
-   ///main>
-    
+        <section id="pokemon-detail" class="hidden">
+            <button id="back-btn" class="btn">← Back to List</button>
+            <div id="detail-content">
+                <!-- La información detallada se inyectará aquí -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,76 @@
+Plan de Implementación Pokedex
+Descripción del Objetivo
+Crear una aplicación Pokedex con dos páginas principales: una página de listado (
+index.html
+) y una página de combate (
+combat.html
+). La aplicación obtendrá datos de la PokeAPI.
+
+Archivos Propuestos
+Estructura
+index.html
+Navegación principal.
+Entrada de búsqueda.
+Contenedor para tarjetas Pokemon.
+Contenedor para Vista Detallada (oculto por defecto).
+
+combat.html
+Navegación principal.
+Contenedor para tarjetas "Boca Abajo".
+Área de visualización de resultados de combate.
+Botón de reinicio.
+
+css/style.css
+Estilos globales (Variables, Reset).
+Estilos de tarjeta (Glassmorphism).
+Estilos de animación de volteo.
+Diseño de cuadrícula responsivo.
+
+js/api.js
+getRandomId()
+: Ayudante.
+fetchPokemon(id)
+: Obtener datos de un solo pokemon.
+fetchRandomPokemons(count)
+: Obtener N pokemons aleatorios.
+[NUEVO] 
+js/main.js
+Lógica para 
+index.html
+.
+Renderizar tarjetas.
+Funcionalidad de filtro.
+Manejo de parámetros URL para Vista Detallada.
+[NUEVO] 
+js/combat.js
+Lógica para 
+combat.html
+.
+Renderizar tarjetas ocultas.
+Manejar selección de tarjetas (máx 2).
+Lógica de combate (Ataque vs Defensa).
+Mostrar resultados.
+Plan de Verificación
+Pruebas Automatizadas
+Ninguna (Proyecto Vanilla JS).
+Verificación Manual
+Página Inicio:
+Abrir 
+index.html
+.
+Verificar que cargan 10 tarjetas con Nombre, Imagen, Ataque, Defensa.
+Escribir en Filtro de Búsqueda -> Verificar que las tarjetas se filtran correctamente.
+Clic en una tarjeta -> Verificar que la URL cambia a ?pokeID=X y aparece la Vista Detallada.
+Clic Atrás -> Verificar que reaparece la Vista de Lista.
+Página Combate:
+Abrir 
+combat.html
+.
+Verificar que cargan 10 tarjetas (Boca abajo).
+Clic 1ra tarjeta -> Se voltea, muestra info.
+Clic 2da tarjeta -> Se voltea, muestra info.
+Verificar que aparece mensaje de Resultado de Combate (Ganar/Perder).
+Clic Reiniciar -> Tarjetas se reinician y se obtienen nuevos pokemon.
+
+
+

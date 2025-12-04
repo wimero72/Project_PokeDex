@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - Combat</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Pokédex Arena</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="combat.html" class="active">Combat</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="combat-header">
+            <h1>Select 2 Cards to Battle</h1>
+            <button id="reset-btn" class="btn hidden">Reset Battle</button>
+        </section>
+
+        <div id="combat-result" class="hidden">
+            <!-- El mensaje del resultado aparecerá aquí -->
+        </div>
+
+        <section id="combat-grid" class="pokemon-grid">
+            <!-- Las cartas Pokémon se inyectarán aquí -->
+        </section>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/combat.js"></script>
+</body>
+
+</html>
