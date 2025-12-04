@@ -52,6 +52,7 @@ Project_PokeDex/
 ### 👤 Autor y Contacto
 
 **Wilmer Isaac Mendoza Rodriguez**
-* **Email:** wmendozar.uoc.fwd@gmail.com
+* **Email:** wmendozar.oracle.g8one@gmail.com
 * **GitHub del Proyecto:** [https://github.com/wimero72/Project_PokeDex.git](https://github.com/wimero72/Project_PokeDex.git)
+* **Visita:** [https://wimero72.github.io/Project_PokeDex/](https://wimero72.github.io/Project_PokeDex/)
 * **Formación:** Estudiante Front End WEB Developer - UOC
